@@ -12,7 +12,7 @@
 #if defined(Q_OS_WIN)
 	#include <windows.h>
 
-    #define IS_NAN(x) std::_isnan(x)
+    #define IS_NAN(x) std::isnan(x)
 #else
     #include <cmath>
     #define IS_NAN(x) std::isnan(x)
